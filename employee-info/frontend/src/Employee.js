@@ -20,7 +20,6 @@ const Employee = ({ id, emp_id, name, address, status, age, phone,state,changeSt
           <button className="btn btn-danger" onClick={()=>deleteHandler(id)}>delete</button>
         </td>
       </tr>
-      // <deleteHandler id={id} deleteHandler={deleteHandler} state={state} changeState={changeState}></deleteHandler>
   );
 };
 export default Employee;
