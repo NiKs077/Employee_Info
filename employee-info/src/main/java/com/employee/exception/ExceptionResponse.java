@@ -1,0 +1,26 @@
+package com.employee.exception;
+
+import java.util.Date;
+import java.util.List;
+
+import lombok.Data;
+
+@Data
+public class ExceptionResponse {
+
+	private Date timestamp;
+	private String message;
+	private List<String> details;
+
+	public ExceptionResponse() {
+		super();
+	}
+
+	public ExceptionResponse(Date timestamp, String message, List<String> details) {
+		super();
+		this.timestamp = timestamp;
+		this.message = message;
+		this.details = details;
+	}
+
+}
