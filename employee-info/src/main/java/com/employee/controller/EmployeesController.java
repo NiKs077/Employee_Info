@@ -47,6 +47,12 @@ public class EmployeesController {
 		return ResponseEntity.created(location).build();
 	}
 	
+	@GetMapping("{id}")
+	public Employees getEmployee(@PathVariable long id) {
+		return empRepo.findById(id)
+				.orElseThrow(() -> new EmployeeNotFoundException("Employee with id " + id + " doesn't exist"));
+	}
+	
 	@PutMapping("{id}")
 	public ResponseEntity<Employees> updateEmployee(@PathVariable long id, @RequestBody Employees employee) {
 		Employees existingEmp = empRepo.findById(id)
