@@ -21,10 +21,3 @@ public class Employees {
 	private Long phone;
 	
 }
-//id:1,
-//emp_id:100,
-//name:"nikhil",
-//address:"shinganapur",
-//status:"working at CTS",
-//age:22,
-//phone:7972505688
