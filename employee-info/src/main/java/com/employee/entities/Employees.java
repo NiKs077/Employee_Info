@@ -14,7 +14,7 @@ public class Employees {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
-	@Column(unique = true)
+	@Column (nullable = false, unique = true)
 	private Long emp_id;
 	private String name;
 	private String address;

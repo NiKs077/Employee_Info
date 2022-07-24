@@ -20,6 +20,7 @@ th{
     padding: 10px 5px 10px 5px;
     background-color: aqua;
     text-align: center;
+    /* width: 100%; */
 }
 td{
     text-align: center;
